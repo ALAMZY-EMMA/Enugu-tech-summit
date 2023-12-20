@@ -1,0 +1,890 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-size: contain;
+}
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 2;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.main{
+    padding: 30px;
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+.log{
+    width: 100px;
+    height: 80px;
+}
+.logg{
+    width: 100px;
+    height: 50px;
+    animation: img;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+
+@keyframes img{
+    from{
+        transform: translateY(30px);
+    }
+    to{
+        transform: translateY(50px);
+
+    }
+}
+.menu{
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+li:hover{
+    color: rgb(255, 80, 80) ;
+    transition-duration: 1s;
+}
+.volun{
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(255, 80, 80);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.fa-bars{
+    display: none;
+}
+.fa-multiply{
+    display: none;
+}
+.logs{
+    display: none;
+}
+
+.mainsecs{
+    width: 100%;
+    height: 500px;
+    animation: image 5s infinite;
+}
+
+@keyframes image{
+    100%{
+        transform: translate(0.4);
+        background-image: url(images/animation-img-4.179538349077861b652d06d13d02c787.svg);
+        background-position: center;
+    }
+    10%{
+        transform: translate(0.4);
+        background-image: url(images/animation-img-1-min.178b4f2d21bf1b04f8f3.jpeg);
+        background-position: center;
+    }
+}
+.maintext{
+    width: 100%;
+    height: 300px;
+    padding: 60px;
+    text-align: start;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+.enugu{
+    color:rgb(255, 80, 80);
+}
+.texts{
+    font-size: 13px;
+    margin-top: 13px;
+    font-weight: lighter;
+}
+
+.click{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.booth{
+    width: 170px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    outline-color: white;
+    outline-style: ridge;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.booth2{
+    width: 170px;
+    height: 40px;
+    background-color: rgb(255, 80, 80);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.fa-telegram{
+    font-size: 20px;
+}
+.clickhere{
+    margin-top: 30px;
+    margin-left: -80px;
+    cursor: pointer;
+    animation: click;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+
+@keyframes click{
+    from{
+        transform: translateY(5px);
+    }
+    to{
+        transform: translateY(20px);
+
+    }
+}
+.here{
+    font-size: 15px;
+}
+
+.enuguimage{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.enugulogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.green{
+    color: green;
+    font-weight: bold;
+}
+
+.event{
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+.eventtext{
+    font-size: 40px;
+}
+.eventtext2{
+    font-size: 15px;
+}
+.stable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    height: 50px;
+}
+.red{
+    width: 150px;
+    height: 5px;
+    background-color: rgb(255, 80, 80); 
+    border: none;
+    border-radius: 5px;
+}
+.white{
+    width: 150px;
+    height: 5px;
+    background-color: white; 
+    border: none;
+    border-radius: 5px;
+}
+.brands{
+    height: 400px;
+    display: flex;
+    gap: 20px;  
+}
+
+.offers{
+    width: 23%;
+    background-color:  rgb(124, 123, 123);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+.offers:hover{
+    transform: scale(1.1);
+    gap: 5px;
+}
+.offerimg{
+    width: 250px;
+    height: 200px;
+}
+.offertext2{
+    font-size: 15px;
+
+}
+.offers1{
+    width: 23%;
+    background-color:  rgb(124, 123, 123);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.offers1:hover{
+    transform: scale(1.1);
+}
+
+.offers2{
+    width: 23%;
+    background-color:  rgb(124, 123, 123);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.offers2:hover{
+    transform: scale(1.1);
+}
+
+.offers3{
+    width: 23%;
+    background-color:  rgb(124, 123, 123);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.offers3:hover{
+    transform: scale(1.1);
+}
+
+.apply{
+    background-color: rgb(255, 80, 80);
+    color: white;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    border:none;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.schedule{
+    padding: 40px;
+    margin-top: 60px;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.scheduletext{
+    font-size: 40px;
+}
+.schedule2{
+    text-align: end;
+    font-weight: lighter;
+}
+.schedule4{
+    width: 120px;
+    height: 5px;
+    background-color: rgb(255, 80, 80);
+    border: none;
+    border-radius: 5px;
+}
+.schedule5{
+    width: 120px;
+    height: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+.eventschedule2{
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.eventschedule3{
+  width: 40%;
+}
+.eventscheduletext{
+    color: rgb(255, 80, 80);
+}
+.eventscheduletext2{
+    margin-top: 5px;
+    color: white;
+}
+.eventscheduletext3{
+    margin-top: 30px;
+    color: white;
+}
+.redd{
+    background-color: rgb(255, 80, 80);
+    width: 2px;
+    height: 450px;
+}
+.blue{
+    background-color: rgb(120, 120, 250);
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    margin-left: -7px;
+    margin-top: 100px;
+    border: 2px solid rgb(255, 80, 80);
+}
+.blue1{
+    background-color:  rgb(120, 120, 250);
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    margin-left: -7px;
+    margin-top: 60px;
+    border: 2px solid rgb(255, 80, 80);
+}
+.techskill{
+    width: 50%;
+}
+.techskilltext{
+    text-align: start;
+    color: rgb(255, 80, 80);
+}
+.techskilltext2{
+    margin-top: 15px;
+    color: white;
+}
+.techskilltext3{
+    margin-top: 5px;
+    color: white;
+}
+.counter{
+    width: 100%;
+    height: 200px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.counthead{
+    font-size: 20px;
+    font-weight: bolder;
+    color: blue;
+}
+.counttext{
+    text-align: start;
+    font-size: 40px;
+    color: white;
+}
+.speakers{
+    height: 550px;
+    text-align: center;
+}  
+.meet{
+    color: white;
+} 
+.well{
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+.speakersimages{
+    display: flex;
+    margin-top: 60px;
+}
+.speakerimage1{
+    background-color:  rgb(124, 123, 123);
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    transform: scale(0.9);
+    border-radius: 10px;
+    
+}
+.speakerimage2{
+    background-color:  rgb(124, 123, 123);
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    transform: scale(1.2);
+    border-radius: 10px;
+    
+}
+.speakerimage3{
+    background-color: rgb(124, 123, 123);
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    transform: scale(1.5);
+    border-radius: 10px;
+    z-index: 2;
+    
+}
+.speakerimage4{
+    background-color:  rgb(124, 123, 123);
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    transform: scale(1.2);
+    border-radius: 10px;
+    z-index: 1;
+}
+.speakerimage5{
+    background-color: rgb(124, 123, 123);
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    transform: scale(0.9);
+    border-radius: 10px;
+}
+.speakerrank{
+    text-align: start;
+    font-size: 13px;
+    color: blue;
+}
+.speakername1{
+    text-align: start;
+    font-size: 30px;
+    color: white;
+}
+
+.speaker{
+    width: 100px;
+    background-color: rgb(167, 183, 255);
+    border-radius: 50%;
+}
+.gallerytext{
+    text-align: center;
+    color: white;
+}
+.gallerytext1{
+     font-size: 40px;
+     color: white;
+}
+.gallery{
+    padding: 40px;
+    display: flex;
+    gap: 10px;
+}
+.galleryimg{
+    width: 50%;
+    border-radius: 5px;
+}
+.gallery2{
+    padding: 40px;
+    display: flex;
+    gap: 10px;
+    margin-top: -60px;
+}
+.gallery3{
+    display: flex;
+    gap: 8px;
+    margin-top: -30px;
+}
+.galleryimg2{
+    width: 33%;
+    border-radius: 5px;
+}
+.testimonials{
+    text-align: center;
+    margin-top: 30px;
+}
+.testimonialstext{
+    font-size: 30px;
+    color: white;
+}
+.testimonialstext2{
+    color: white;
+}
+.attendeesimg{
+    display: flex;
+    height: 500px;
+}
+.attendeesimg1{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.attendeesimg2{
+    width: 300px;
+    border-radius: 50%;
+}
+.attendeestext{
+    background-color: rgb(105, 105, 241);
+    width: 60%;
+    padding: 40px;
+    color: white;
+}
+.quote{
+    font-size: 90px;
+}
+.attendeestext2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.attendeestext3{
+    font-size: 17px;
+    margin-top: 20px;
+}
+.attendeestext4{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.quote1{
+    font-size: 100px;
+    text-align: end;
+}
+.sponsers{
+    margin-top: 10px;
+    background-color: white;
+    text-align: center;
+}
+.widgets{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.end{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+.us{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 80, 80);
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+.center2{
+    margin-top: 10px;
+}
+.eventdate{
+    margin-top: 10px;
+}
+.date{
+    margin-top: 5px;
+}
+.about{
+    margin-top: 10px;
+}
+.fa-arrow-up{
+    cursor: pointer;
+    color: white;
+}
+.end2{
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright{
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES(Small Screen) */
+
+
+@media only screen and (width < 800px){
+    .fa-bars{
+        display: block;
+        text-align: end;
+        color: white;
+        font-size: 20px;
+    }
+    .fa-multiply{
+        display: block;
+        text-align: end;
+    }
+    header{
+        display: none;
+    }
+
+    .main{
+        background-color:rgb(0, 0, 0);
+        flex-direction: column;
+        left: 0;
+        right: 0;
+        text-align: start;
+        height: 100vh;
+        margin-top: -50px;
+        gap: 50px;
+        opacity: 0.9;
+        position: fixed;
+    }
+    .main2{
+        margin-top: 20px;
+    }
+    li{
+        margin-top: 30px;
+    }
+    .log{
+        margin-top: 70px;
+    }
+   
+    .image{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        background-color: black;
+    }
+    .logs{
+        width: 40px;
+        height: 40px;
+        display: block;
+    }
+   
+    .maintext{
+        font-size: 14px;
+        padding: 20px;
+
+    }
+    .click{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -60px;
+    }
+    .booth{
+        width: 250px;
+        height: 30px;
+    }
+    .booth2{
+        width: 250px;
+        height: 30px;
+    }
+    .clickhere{
+        width: 100px;
+        margin-top:0px;
+        margin-left: 0px;
+    }
+    .enugulogo{
+        height:80px;
+        font-size: 10px;
+    }
+    .event{
+        width: 100%;
+        text-align: center;
+    }
+    .eventtext{
+        font-size: 30px;
+    }
+    .eventtext2{
+        font-size: 10px;
+    }
+    .red{
+        width: 70px;
+    }
+    .white{
+        width: 70px;
+    }
+    .brands{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+    .offers{
+        width: 70%;
+        height: 250px;
+    }
+    .offers1{
+        width: 70%;
+        height: 250px;
+    }
+    .offers2{
+        width: 70%;
+        height: 250px;
+    }
+    .offers3{
+        width: 70%;
+        height: 250px;
+    }
+    .offerimg{
+        width: 80%;
+        height: 100px;
+    }
+    .offers{
+        font-size: 10px;
+    
+    }
+    .offertext{
+        font-size: 12px;
+    }
+    .offertext2{
+        font-size: 10px;
+    }
+    .apply{
+        width: 150px;
+        height: 40px;
+    }
+    .schedule{
+        margin-top: 200%;
+        flex-direction:column;
+    }
+    .scheduletext{
+        font-size: 30px;
+        text-align: center;
+    }
+    .scheduletext1{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .schedule2{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .eventschedule3{
+        width: 35%;
+        font-size: 10px;
+    }
+    .redd{
+        height: 500px;
+        margin-left: 10px;
+    }
+    .techskill{
+        width: 45%;
+        font-size: 10px;
+    }
+    .counter{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .counthead{
+        font-size: 15px;
+    }
+    .speakerrank{
+        font-size: 8px;
+    }
+    .speakername1{
+        font-size: 10px;
+    }
+    .speaker{
+        width: 50px;
+    }
+    .speakerimage1{
+        height: 150px;
+    }
+    .speakerimage2{
+        height: 150px;
+    }
+    .speakerimage3{
+        height: 150px;
+    }
+    .speakerimage4{
+        height: 150px;
+    }
+    .speakerimage5{
+        height: 150px;
+    }
+    .gallerytext{
+        margin-top: -100px;
+    }
+    .gallerytext1{
+        font-size: 30px;
+   }
+   .gallerytext2{
+        font-size: 10px;
+   }
+   .attendeesimg{
+    flex-direction: column;
+   } 
+   .attendeesimg1{
+    width: 95%;
+   }
+   .attendeesimg2{
+    width: 200px;
+   }
+   .attendeestext{
+    width: 95%;
+    height: 500px;
+   }
+   .attendeestext3{
+    font-size: 10px;
+   }
+   .quote1{
+    font-size: 10px;
+   }
+   .sponsers{
+    width: 95%;
+    margin-top: 70%;
+   }
+   .widgets{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+   }
+   .end{
+    flex-direction: column;
+   }
+   .eventcenter{
+    margin-top: 20px;
+   }
+   .eventtime{
+    margin-top: 20px;
+   }
+   .fa-arrow-up{
+    margin-left: 90%;
+   }
+   .end2{
+    flex-direction: column;
+   }
+
+}
