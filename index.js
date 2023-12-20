@@ -17,5 +17,5 @@ function hide(){
     main2.classList.remove('main2');
     main.style.display='none';
     image.style.visibility='visible';
-    clickhere.style.display='block'; 
+    clickhere.style.display='block';
 }
